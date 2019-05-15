@@ -16,6 +16,12 @@
 
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Date;
+
+
 /**
  * This class will define a company's end-of-day stock price
  * Look at resources/data/historicalStockData.json
@@ -27,4 +33,24 @@ public class Stock {
     // provided data in resources/data
 
     // TODO - add getter and setter methods for your attributes
+    @JsonProperty
+    private Ticker ticker;
+    @JsonProperty
+    private DailyClosePrice[] dailyClosePrice;
+
+}
+private class DailyClosePrice {
+
+    @DJsonFormat(shape = JsonFormat.Shape.STRING, pattern="mm/dd/yyy")
+    public Date date;
+    @JsonProperty
+    public double price;
+    
+}
+public Ticker getTicker() {
+    return ticker;
+}
+
+public void setTicker(Ticker ticker) {
+    this.Ticker = ticker;
 }
