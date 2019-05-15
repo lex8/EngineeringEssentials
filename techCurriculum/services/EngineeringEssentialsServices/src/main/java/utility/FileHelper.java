@@ -33,10 +33,10 @@ public class FileHelper {
 
     public static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("yyyy-MM-dd");
     private static final ObjectMapper mapper = new ObjectMapper();
-
+"
     public static Event readSingleEvent(String fileName) throws IOException {
 
-        InputStream inputStream = new FileInputStream(("data" + File.separatorChar + fileName));
+        InputStream inputStream = new FileInputStream((data" + File.separatorChar + fileName));
 //        InputStream resourceAsStream = FileHelper.class.getClassLoader().getResourceAsStream(fileName);
         return mapper.readValue(inputStream, new TypeReference<Event>() {});
     }
