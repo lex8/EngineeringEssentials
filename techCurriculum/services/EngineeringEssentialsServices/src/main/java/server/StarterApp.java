@@ -92,7 +92,7 @@ public class StarterApp extends Application<Configuration> {
      * Working Directory: path to EngineeringEssentialsTraining
      *  - '...\EngineeringEssentials\EngineeringEssentialsTraining"
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] amvn rgs) throws Exception {
 
         StarterApp restServer = new StarterApp();
         restServer.run(args);

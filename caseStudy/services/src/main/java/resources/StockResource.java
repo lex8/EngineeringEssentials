@@ -1,3 +1,18 @@
+package resources;
+
+import pojo.Stock;
+import utility.InputValidator;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+
 /**
  * Copyright 2019 Goldman Sachs.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +31,17 @@
 
 package resources;
 
-// TODO - add your @Path here
+@Path("service")
 public class StockResource {
+
+    @GET
+    @Path("stock")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllStocks() throws IOException{
+
+        List<Stock> stocks=InputValidator.readAllStock("caseStudy/services/src/main/resources/data/historicalStockData.json");
+        return Response.ok().entity(stocks).build();
+    }
 
     // TODO - Add a @GET resource to get stock data
     // Your service should return data based on 3 inputs

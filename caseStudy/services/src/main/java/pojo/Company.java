@@ -35,7 +35,7 @@ public class Company {
     @JsonProperty
     private int numberOfEmployees;
     @JsonProperty
-    private Sector sector;
+    private String sector;
     @JsonProperty
     private String industry;
 
@@ -79,11 +79,11 @@ public class Company {
         this.numberOfEmployees=numberOfEmployees;
     }
 
-    public Sector getSector(){
+    public String getSector(){
         return sector;
     }
 
-    private void setSector(Sector sector){
+    private void setSector(String sector){
         this.sector=sector;
     }
 

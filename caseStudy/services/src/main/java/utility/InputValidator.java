@@ -16,15 +16,45 @@
 
 package utility;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import model.Event;
+import model.Team;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.List;
 /**
  * Utility class to validate inputs
  */
 public class InputValidator {
 
+    public static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("mm/dd/yyyy");
+    private static final ObjectMapper mapper = new ObjectMapper();
+
+    public static List<Stock> readAllStock(String fileName) throws IOException {
+
+        InputStream inputStream = new FileInputStream((fileName));
+//        InputStream resourceAsStream = FileHelper.class.getClassLoader().getResourceAsStream(fileName);
+        return mapper.readValue(inputStream, new TypeReference<List<Stock>>() {
+        });
+    }
+    public static List<Company> readAllCompany(String fileName) throws IOException {
+
+        InputStream inputStream = new FileInputStream((fileName));
+//        InputStream resourceAsStream = FileHelper.class.getClassLoader().getResourceAsStream(fileName);
+        return mapper.readValue(inputStream, new TypeReference<List<Company>>() {
+        });
+    }
     // TODO - write a method that will validate your JSON input files
 
     // TODO - write a method that will validate the inputs to the Company Resource
-
+    
     // TODO - write a method that will validate the inputs to the Stock Resource
 
 }
