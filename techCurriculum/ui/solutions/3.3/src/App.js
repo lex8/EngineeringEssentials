@@ -15,8 +15,8 @@
 **/
 
 import React from 'react';
-import Title from './components/Title';
-import Card from './components/Card';
+import Title from './components/Title.js';
+import Card from './components/Card.js';
 
 function App() {
   return (

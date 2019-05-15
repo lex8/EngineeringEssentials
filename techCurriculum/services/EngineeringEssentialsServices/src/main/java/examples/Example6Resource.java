@@ -2,12 +2,16 @@ package examples;
 
 
 import model.Country;
+import model.Event;
+import utility.FileHelper;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.io.IOException;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -36,11 +40,18 @@ public class Example6Resource {
      *
      */
     @GET
-    @Path("replace")
+    @Path("allParticipatingCountries")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllParticipatingCountries() {
+    public HashSet<Country> getAllParticipatingCountries() throws IOException {
 
-        List<Country> participatingCountries = null;
-        return null;
+        List<Event> events = FileHelper.readAllEvents("/Users/AnneXie/Documents/Columbia/second year/engineering essentials/EngineeringEssentials/techCurriculum/services/EngineeringEssentialsServices/data/allParticipatingCountries.json");
+        HashSet<Country> participatingCountries = new HashSet<>();
+
+        for (Event event: events){
+            participatingCountries.add(event.getAwayCountry());
+            participatingCountries.add(event.getHomeCountry());
+        }
+
+        return participatingCountries;
     }
 }

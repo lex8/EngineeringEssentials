@@ -15,11 +15,16 @@
 **/
 
 import React from 'react';
+import Title from './components/Title.js';
+import Card from './components/Card.js';
+
 
 function App() {
   return (
     <div>
-      <h1>Hello World 2</h1>
+      <Title/>
+      <Card author='John Smith' text='React is so cool!'/>
+      <Card author='Anne Xie' text='Why is this not working?'/>
     </div>
   );
 }

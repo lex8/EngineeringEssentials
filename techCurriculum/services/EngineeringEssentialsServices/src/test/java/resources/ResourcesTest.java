@@ -37,6 +37,7 @@ import static utility.FileHelper.DATEFORMAT;
  * specific language governing permissions and limitations
  * under the License.
  */
+
 public class ResourcesTest extends JerseyTest {
     private static ObjectMapper mapper = new ObjectMapper();
 
