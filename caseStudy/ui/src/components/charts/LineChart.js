@@ -298,6 +298,12 @@ class LineChart extends React.Component {
          * required by the type of line chart chosen and set it in the series. Use Date.UTC(..)
          * to create the x-axis.
          */
+
+         //research highchart
+         //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
+
+
+
         
 
          this.chart.series[0].setData(data);
