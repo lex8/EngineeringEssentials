@@ -27,12 +27,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 // TODO - add your @Path here
-@Path
+@Path("service")
 public class CompanyResource {
 
     // TODO - Add a @GET resource to get company data
     @GET
-    @Path("Company")
+    @Path("company")
+    @Producess(MediaType.APPLICARION_JSON)
+    public Response getCompanyInfo() throws IOException {
+        
+        Company ticker = null;
+        return Response.ok().entity(ticker).build();
+
+    }
 
     // Your service should return data for a given stock ticker
 
