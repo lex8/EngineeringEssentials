@@ -20,6 +20,9 @@ package resources;
 public class CompanyResource {
 
     // TODO - Add a @GET resource to get company data
+    @GET
+    @Path("Company")
+    
     // Your service should return data for a given stock ticker
 
 }
