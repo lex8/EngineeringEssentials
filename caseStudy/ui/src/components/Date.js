@@ -27,12 +27,13 @@
  */
 
 import React from 'react';
-//import DatePicker from 'react-datepicker'; UNCOMMENT this line if you are using the DatePicker component
+import DatePicker from 'react-datepicker'; 
 import moment from 'moment';
+import 'react-datepicker/dist/react-datepicker.css'
 
-//import 'react-datepicker/dist/react-datepicker.css'; UNCOMMENT this line if you are using the DatePicker component
+class Date extends React.Component
 
-class Date extends React.Component {
+ {
     constructor (props) {
         super(props)
         this.state = {
@@ -41,35 +42,33 @@ class Date extends React.Component {
 
     }
 
-    componentDidMount() {
+    componentDidMount() 
+    {
         this.props.onChange(this.state.date);
     }
 
-    handleChange(date) {
-        /**
-         * TODO
-         * Set the state. Call this.props.onChange with the date argument
-         * to propagate the change to App component, which will handle it via its
-         * own onChange prop.
-         */
+    handleChange = (data) =>
+     {
+        //set the
+        const value = date.target.value;
+        this.props.onChange(date);
+         
     }
 
-    render() {
+    render() 
+    {
         return (
             <div className="date">
-                {
-                    /**
-                     * TODO
-                     * Render the date picker component with a date format of "MM/DD/YYYY".
-                     * Add a props for an onChange method. Don't forget to bind this method!
-                     * This method should set the state to the date argument passed in the parameter.
-                     *
-                     */
-                }
-                <p><strong>{this.props.text}</strong></p>
-                <div className="date-input">
+            {
 
-                </div>
+                <DatePicker selected={this.state.data} onChange={this.handleChange} />
+
+            }        
+            <p><strong>{this.props.text}</strong></p>
+
+            <div className = "date-input">
+
+            </div>
             </div>
         );
     }
@@ -77,4 +76,4 @@ class Date extends React.Component {
 
 }
 
-// Don't forget to export your component!
+export default Date;
