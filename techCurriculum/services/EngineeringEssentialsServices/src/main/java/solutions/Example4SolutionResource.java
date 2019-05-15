@@ -33,7 +33,7 @@ public class Example4SolutionResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getSampleEvent() throws IOException {
 
-        Event event = FileHelper.readSingleEvent("single-event.json");
+        Event event = FileHelper.readSingleEvent("data/single-event.json");
         return Response.ok().entity(event).build();
     }
 }

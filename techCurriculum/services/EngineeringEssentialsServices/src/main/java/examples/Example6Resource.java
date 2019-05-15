@@ -36,11 +36,18 @@ public class Example6Resource {
      *
      */
     @GET
-    @Path("replace")
+    @Path("allParticipatingCountries")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllParticipatingCountries() {
-
-        List<Country> participatingCountries = null;
+    public Response getAllParticipatingCountries() throws java.io.IOException {
+        List<model.Country> participatingCountries = new List<model.Country>();
+        List<model.Event> events = utility.FileHelper.readAllEvents("/Users/lexikuppersmith/EngineeringEssentials/techCurriculum/services/EngineeringEssentialsServices/data/allParticipatingCountries.json");
+        for (model.Event event: events)
+        {
+            if (!participatingCountries.contains(event.getWinningCountry()))
+                participatingCountries.add(event.getWinningCountry());
+            if (!participatingCountries.contains(event.getLosingCountry()))
+                participatingCountries.add(event.getLosingCountry());
+        }
         return null;
     }
 }

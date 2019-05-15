@@ -42,9 +42,10 @@ public class Example5Resource {
      */
     @GET
     @Path("all")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response getAllEvents() throws IOException {
 
-        List<Event> events = null;
+        List<Event> events = utility.FileHelper.readAllEvents("/Users/lexikuppersmith/EngineeringEssentials/techCurriculum/services/EngineeringEssentialsServices/data/events.json");
         return Response.ok().entity(events).build();
     }
 }

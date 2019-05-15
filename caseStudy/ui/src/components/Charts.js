@@ -20,12 +20,8 @@ import LineChart from './charts/LineChart';
 class Charts extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            /**
-             * TODO
-             * Initialize a state object to store a JavaScript object returned from the helper method.
-             * It can be initialized to be empty.
-             */
+        this.state = {dailyClosePrices: [], name: ' '};
+        this.dataSourceHelper = this.dataSourceHelper.bind(this);
         };
     }
 
@@ -74,6 +70,13 @@ class Charts extends React.Component {
          *
          *  Don't forget to bind the helper method in the constructor!
          * */
+         fetch('http://localhost:8000/service_path/some_param')
+            .then(res => res.json().parse() ({
+
+                dailyClosePrices: res.dailyClosePrices[props.dailyClosePrices],
+                name: res.name[props.name],
+                json
+            });
 }
     
     render() {
@@ -84,4 +87,4 @@ class Charts extends React.Component {
     }
 }
 
-// Don't forget to export your component!
+export default Charts;

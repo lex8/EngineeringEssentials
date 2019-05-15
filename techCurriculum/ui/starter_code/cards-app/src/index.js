@@ -14,11 +14,21 @@
 * under the License.
 **/
 
+/**
+ Remember that JSX is different from html 
+ Basic functional component 
+
+ const MyComponent = () => {
+   return <hq>Hellow, world!</h1>; 
+ }; 
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../stylesheet.css';
+import App from  './App' 
 
 ReactDOM.render(
-  <p>Hello World</p>,
+  <App  />,
   document.getElementById('root')
-);
+  );
