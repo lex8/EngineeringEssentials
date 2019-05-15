@@ -21,7 +21,7 @@ package resources;
  */
 public class StockResourceTest {
 
-    // TODO - write a test for each method in the CompanyResource class
+    // TODO - write a test for each method in the StockResource class
     // Think about both positive and negative test cases:
     // What happens if no inputs are passed?
     // What happens if the input is null?

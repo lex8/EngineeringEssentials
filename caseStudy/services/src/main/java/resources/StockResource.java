@@ -1,18 +1,14 @@
 package resources;
 
-import pojo.Stock;
-import utility.InputValidator;
+import pojo.*;
+import utility.*;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import javax.ws.rs.*;
+import java.io.*;
+import java.util.*;
+import java.text.*;
 
-
+import static utility.FileHelper.DATEFORMAT;
 /**
  * Copyright 2019 Goldman Sachs.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,16 +27,28 @@ import java.util.List;
 
 package resources;
 
-@Path("service")
+@Path("stock")
 public class StockResource {
 
     @GET
-    @Path("stock")
+    @Path("startDate/{startDate}/endDate/{endDate}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllStocks() throws IOException{
+    public Response getAllStocks(@PathParam("startDate") String startDateStr, @PathParam("endDate") String endDateStr) throws IOException{
+
+        Date startDate=DATEFORMAT.parse(startDateStr);
+        Date endDate=DATEFORMAT.parse(endDateStr);
 
         List<Stock> stocks=InputValidator.readAllStock("caseStudy/services/src/main/resources/data/historicalStockData.json");
-        return Response.ok().entity(stocks).build();
+
+        List<Stock> stocksInRange=new ArrayList<>();
+        for (Stock stock: stocks){
+            if ((stock.getDate().before(endDate) || stock.getDate().equals(endDate)) && (stock.getDate().after(startDate) || stock.getDate().equals(startDate))){
+                stocksInRange.add(stock);
+            }
+        }
+
+        return stocksInRange;
+        
     }
 
     // TODO - Add a @GET resource to get stock data

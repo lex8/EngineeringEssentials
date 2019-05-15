@@ -19,7 +19,8 @@ package pojo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.Date;
+import java.util.*;
+import java.io.*;
 
 
 /**
@@ -36,21 +37,28 @@ public class Stock {
     @JsonProperty
     private Ticker ticker;
     @JsonProperty
-    private DailyClosePrice[] dailyClosePrice;
-
-}
-private class DailyClosePrice {
-
-    @DJsonFormat(shape = JsonFormat.Shape.STRING, pattern="mm/dd/yyy")
-    public Date date;
-    @JsonProperty
-    public double price;
+    private TreeMap<Date, Double> dailyClosePrice;
     
-}
-public Ticker getTicker() {
-    return ticker;
+    // public TreeMap<Date, Double> getDailyClosePrice() {
+    //     return dailyClosePrice;
+    // }
+    public Ticker getTicker() {
+        return ticker;
+    }
+
+    //return dates and associated prices
+    public TreeSet<Date> getDate(){
+        Set<Date> dates=dailyClosePrice.keySet();
+        return dates;
+    }
+
+    //public 
+
+    // public void setTicker(Ticker ticker) {
+    //      this.ticker = ticker;
+    // }
+    // public void setDailyClosePrice(DailyClosePrice[] dailyClosePrice) {
+    //     this.dailyClosePrice = dailyClosePrice;
+    // }
 }
 
-public void setTicker(Ticker ticker) {
-    this.Ticker = ticker;
-}
