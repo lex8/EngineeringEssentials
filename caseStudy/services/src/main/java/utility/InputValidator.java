@@ -34,7 +34,7 @@ import java.util.List;
  */
 public class InputValidator {
 
-    public static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    public static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("mm/dd/yyyy");
     private static final ObjectMapper mapper = new ObjectMapper();
 
     public static List<Stock> readAllStock(String fileName) throws IOException {
