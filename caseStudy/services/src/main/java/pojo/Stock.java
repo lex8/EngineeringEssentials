@@ -52,7 +52,9 @@ public DailyClosePrice[] getDailyClosePrice() {
 public Ticker getTicker() {
     return ticker;
 }
-
 public void setTicker(Ticker ticker) {
-    this.Ticker = ticker;
+    this.ticker = ticker;
+}
+public void setDailyClosePrice(DailyClosePrice[] dailyClosePrice) {
+    this.dailyClosePrice = dailyClosePrice;
 }
