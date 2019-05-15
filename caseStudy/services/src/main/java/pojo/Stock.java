@@ -45,7 +45,9 @@ private class DailyClosePrice {
     public Date date;
     @JsonProperty
     public double price;
-    
+}
+public DailyClosePrice[] getDailyClosePrice() {
+    return dailyClosePrice[];
 }
 public Ticker getTicker() {
     return ticker;
