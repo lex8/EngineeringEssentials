@@ -46,11 +46,25 @@ public class Stock {
         return ticker;
     }
 
-    //return dates and associated prices
-    public TreeSet<Date> getDate(){
-        Set<Date> dates=dailyClosePrice.keySet();
+    public Map<Date, Double> getDailyClosePrice(){
+        return dailyClosePrice;
+    }
+
+    public Set<Date> getDate(){
+        HashSet<Date> dates=dailyClosePrice.keySet();
         return dates;
     }
+
+    public List<Double> getPrice(){
+        ArrayList<Double> prices=dailyClosePrice.values();
+        return prices;
+    }
+
+    //return dates and associated prices
+    // public TreeSet<Date> getDate(){
+    //     Set<Date> dates=dailyClosePrice.keySet();
+    //     return dates;
+    // }
 
     //public 
 
