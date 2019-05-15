@@ -16,17 +16,18 @@
 
 import React from 'react';
 import './style/App.css';
-
-/**
- * TODO:
- * Import your components
- */
+import Chart from './components/Chart';
+import Date from './components/Date';
+import StockTicker from './components/StockTimer';
+import LineChart from './components/LineChart';
 
 
 class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
+            userInputs:
+
             /**
              * TODO
              * Add state objects for the user inputs and anything else you may need to render the highchart.
@@ -66,7 +67,9 @@ class App extends React.Component{
                    *  to help control rendering and pass these states as props to the component. This conditional can
                    *  be maintained as a state object.
                    *  http://reactpatterns.com/#conditional-rendering
-                   */}
+                   */
+
+                   }
 
           </div>
       );

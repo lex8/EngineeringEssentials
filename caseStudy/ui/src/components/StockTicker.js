@@ -87,6 +87,12 @@ class StockTicker extends React.Component {
              * TODO
              * Add any additional state to pass via props to the typeahead component.
              */
+             options : [ATVI, ADBE, AKAM, ALXN, GOOG, AMZN, AAL, AMGN,
+               ADI, AAPL, AMAT, ADSK, ADP, BIDU, BIIB, BMRN, AVGO,
+               CA, CELG, CERN, CHTR, CHKP, CTAS, CSCO, CTXS, CTSH,
+               CMCSA, COST, CSX, CTRP, XRAY, DISCA, DISCK, DISH, DLTR,
+               EBAY, EA, EXPE, ESRX, FB, FAST, FISV, GILD, HAS, HSIC,
+               HOLX, IDXX, ILMN, INCY]
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -103,9 +109,23 @@ class StockTicker extends React.Component {
              * to handle errors). If you successfully retrieve this information, you can set the state objects
              * and render it.
              */
-            this.setState({showinfo: true});
 
-            //this.props.onChange(..);  Call this.props.onChange with the selected symbol to propagate it
+             $.ajax({
+                    url: 'http://localhost:8000/service_path/company',
+                    dataType: 'jsonp',
+                    success: function (parsed_json) {}
+                    this.setState({symbol: parsed_json[props.company]['symbol']});
+                    this.setState({name: parsed_json[props.company]['name']});
+                    this.setState({city: parsed_json[props.company]['city']});
+                    this.setState({state: parsed_json[props.company]['state']});
+                    this.setState({sector: parsed_json[props.company]['sector']});
+                    this.setState({industry: parsed_json[props.company]['industry']});
+                        }.bind(this)
+                      });
+                    }
+            this.setState({showcompanyinfo: true});
+
+            this.props.onChange(symbol); // Call this.props.onChange with the selected symbol to propagate it
             // to the App component, which will handle it via its own onChane prop,
             // ultimately  used to fetch the data for the LineChart component.
 
@@ -132,17 +152,15 @@ class StockTicker extends React.Component {
                 <div className="ticker-input">
                     <p><strong>Stock Ticker</strong></p>
                     <div className="stockticker-typeahead">
-                        {/* useful props if you decide to use react-bootstrap-typeahead
+                        {// useful props if you decide to use react-bootstrap-typeahead
                         <Typeahead
-                             align=
-                             filterBy=
-                             labelKey=
+                             align= 'justify'
                              onChange={this.handleChange}
-                             minLength=
+                             minLength= 0
                              placeholder="Company Name/Ticker"
-                             options=
+                             options= this.options
                         />
-                        */}
+                        }
                     </div>
                 </div>
                 {
@@ -153,6 +171,17 @@ class StockTicker extends React.Component {
                      *  be maintained as a state object.
                      *  http://reactpatterns.com/#conditional-rendering
                      */
+
+                     {
+                        this.onChange ? (
+                           <div>
+                              <h1>this.name + "(" + this.symbol + ")"</h1>
+                              <h2>"Industry: " + this.industry</h2>
+                            </div>
+                            ) : (
+                                //do nothing
+                            )
+                     }
                 }
             </div>
         );
@@ -160,4 +189,4 @@ class StockTicker extends React.Component {
 
 }
 
-//Don't forget to export your component!
+export default StockTicker;
