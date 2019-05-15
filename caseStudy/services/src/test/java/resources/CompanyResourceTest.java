@@ -19,11 +19,10 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.*; //////////////////////////
 import resources.*; ///////////////////////////
-import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
 import org.junit.Assert;
 import org.junit.Test;
-import utility.FileHelper;
+import utility.InputValidator;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Application;
@@ -34,7 +33,7 @@ import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static utility.FileHelper.DATEFORMAT;
+import static utility.InputValidator.DATEFORMAT;
 /**
  * Write your tests for the Company Resource here
  */
@@ -46,18 +45,9 @@ public class CompanyResourceTest {
     // What happens if the input is null?
     private static ObjectMapper mapper = new ObjectMapper();
 
-
-    @Override
-    protected Application configure() {
-        return new ResourceConfig(
-                Example2Resource.class,
-                Example3Resource.class,
-        );
-    }
     public void testGetCompanyInfo() {
         List<Company> apple = target().path("/services/company/AAPL").request().get(List.class);
         String other = target().path("/services/company/random").request().get(String.class);
-
 
         assertEquals("Apple Inc.", apple.getName());
         assertEquals("Cupertino", apple.getHeadquartersCity());

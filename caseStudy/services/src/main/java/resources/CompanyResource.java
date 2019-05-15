@@ -38,7 +38,6 @@ public class CompanyResource {
         
         Company ticker = null;
         return Response.ok().entity(ticker).build();
-
     }
 
     // Your service should return data for a given stock ticker
