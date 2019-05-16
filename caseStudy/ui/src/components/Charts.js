@@ -77,7 +77,6 @@ class Charts extends React.Component {
                              this.setState({name: props.name});
                              //filter
                              this.setState({dailyClosePrices: parsed_json[props.name]['dailyClosePrices']});
-
                                  }.bind(this)
                                });
                              }

@@ -300,19 +300,14 @@ class LineChart extends React.Component {
          * to create the x-axis.
          */
 
-         //research highchart
-         //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
-        var xAxisArray = [];
-        var currentDate = xAxisArray[-1];
-        xAxisArray += [props.start_date];
-        for (int i = 0; i < props.end_date - props.start_date + 1; i++)
-        {
-              xAxisArray += [currentDate + 1];
-              i++;
-              currentDate = xAxisArray[-1];
-        }
-        this.highchartsOptions.xAxis.categories = xAxisArray;
-        var data = this.props.data;
+        Object.assign(this.chart, {
+            data: props.data,
+            xaxis: Date.UT(props.Date),
+            companyName: props.data.name
+        });
+
+        // Call the chart again.
+        Highcharts.chart('chart', this.state.chartData);
         this.chart.series[0].setData(data);
     }
 
