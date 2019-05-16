@@ -38,7 +38,7 @@ public class CompanyResource {
     public Response getCompanyInfo(@PathParam("ticker") Ticker ticker) throws IOException {
         
         Company company = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
-        return Response.ok().entity(ticker).build();
+        return response.ok().entity(ticker).build();
     }
 
     // Your service should return data for a given stock ticker

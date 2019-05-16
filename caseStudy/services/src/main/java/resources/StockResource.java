@@ -52,10 +52,18 @@ public class StockResource {
         TreeMap<Date, double> pricesInRange=new TreeMap<Date, double>();
         for (Stock stock: stocks){
             if ((stock.getDate().before(endDate) || stock.getDate().equals(endDate)) && (stock.getDate().after(startDate) || stock.getDate().equals(startDate))){
-                stocksInRange.add(stock);
+                pricesInRange.add(stock);
             }
         }
-
-        return pricesInRange;
+        Response.ResponseBuilder response;
+        if (pricesInRange.size() > 0) {
+            return Response.ok(pricesInRange).build();
+        } else {
+            return Response.ok().entity("No matches found for Date with Company " + ticker).build();
+        }
+        } catch (Exception e) {
+            response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e);
+        }
+        return response.build();
         
     }
