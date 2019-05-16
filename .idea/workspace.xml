@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd422090-b5f7-4ea0-9f60-db10751300d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/caseStudy/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/ui/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,52 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="372">
+              <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Company.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Stock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/CompanyResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/StockResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,26 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="182" column="29" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="182" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/techCurriculum/ui/solutions/7.1/src/components/CardForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/techCurriculum/ui/solutions/7.1/src/components/Title.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="597">
+              <caret line="186" column="10" lean-forward="true" selection-start-line="186" selection-start-column="10" selection-end-line="186" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -102,8 +127,8 @@
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js" />
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Date.js" />
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js" />
-        <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" />
         <option value="$PROJECT_DIR$/caseStudy/ui/src/App.js" />
+        <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" />
       </list>
     </option>
   </component>
@@ -129,6 +154,66 @@
               <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
               <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
               <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EngineeringEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="caseStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
@@ -416,34 +501,7 @@
     <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/test/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/utility/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/StockResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -476,15 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/CompanyResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,10 +580,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
+    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="182" column="29" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="182" selection-end-column="29" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/pojo/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/CompanyResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/StockResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -542,6 +620,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
           <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="186" column="10" lean-forward="true" selection-start-line="186" selection-start-column="10" selection-end-line="186" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -554,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="372">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
         </state>
       </provider>
     </entry>

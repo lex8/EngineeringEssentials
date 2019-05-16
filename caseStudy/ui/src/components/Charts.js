@@ -71,11 +71,10 @@ class Charts extends React.Component {
          *  Don't forget to bind the helper method in the constructor!
          * */
           $.ajax({
-                             url: 'http://localhost:8000/service_path/stocks',
+                             url: 'http://localhost:8000/ticker/{props.name}/startDate/{startDate}/endDate/{endDate}',
                              dataType: 'jsonp',
                              success: function (parsed_json) {}
                              this.setState({name: props.name});
-                             //filter
                              this.setState({dailyClosePrices: parsed_json[props.name]['dailyClosePrices']});
                                  }.bind(this)
                                });
