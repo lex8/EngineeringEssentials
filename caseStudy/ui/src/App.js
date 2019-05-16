@@ -74,7 +74,7 @@ class App extends React.Component{
                    */
                    this.name != NULL && this.startDate != NULL && this.endDate != NULL ? (
                                               <div>
-                                                <Chart: name = props.name/>
+                                                <Chart: name = props.name startDate = props.startDate endDate = props.endDate/>
                                                </div>
                                                ) : (
                                                    //do nothing

@@ -20,7 +20,7 @@ import LineChart from './charts/LineChart';
 class Charts extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {dailyClosePrices: [], name: ' '};
+        this.state = {dailyClosePrices: [], name: ' ', startDate = ' ', endDate = ' '};
         this.dataSourceHelper = this.dataSourceHelper.bind(this);
         };
     }
@@ -91,6 +91,7 @@ class Charts extends React.Component {
          * TODO
          * Render your LineChart component and pass the data for the chart to display via props
          */
+         <LineChart: name = props.name Data = dailyClosePrices />
          <div> <div/>
     }
 }
