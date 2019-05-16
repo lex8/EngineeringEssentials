@@ -45,7 +45,7 @@ public class Stock {
         return ticker;
     }
 
-    public Map<Date, Double> getDailyClosePrice(){
+    public TreeMap<Date, Double> getDailyClosePrice(){
         return dailyClosePrice;
     }
 

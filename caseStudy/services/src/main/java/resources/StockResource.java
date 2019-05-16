@@ -50,7 +50,7 @@ public class StockResource {
         }
 
         TreeMap<Date, double> pricesInRange=new TreeMap<Date, double>();
-        for (Stock stock: stocks){
+        for ( : particularStock){
             if ((stock.getDate().before(endDate) || stock.getDate().equals(endDate)) && (stock.getDate().after(startDate) || stock.getDate().equals(startDate))){
                 pricesInRange.add(stock);
             }

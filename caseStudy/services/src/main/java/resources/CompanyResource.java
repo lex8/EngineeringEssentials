@@ -37,8 +37,21 @@ public class CompanyResource {
     @Producess(MediaType.APPLICARION_JSON)
     public Response getCompanyInfo(@PathParam("ticker") Ticker ticker) throws IOException {
         
-        Company company = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
-        return response.ok().entity(ticker).build();
+        List<Company> allCompany = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
+        Company particularCompany = new Company;
+
+        for (Company company: allCompany) {
+            if ((company.getSymbol().equals(ticker))) {
+                particularCompany = company;
+            }
+        }
+        try{
+            return response.ok().entity(particularCompany).build();
+        } catch (Exception e) {
+            response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e);
+        }
+
+        
     }
 
     // Your service should return data for a given stock ticker
