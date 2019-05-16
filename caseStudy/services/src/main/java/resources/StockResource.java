@@ -42,7 +42,7 @@ public class StockResource {
 
         List<Stock> stocks=InputValidator.readAllStock("caseStudy/services/src/main/resources/data/historicalStockData.json");
         Stock particularStock = new Stock;
-        
+
         for (Stock stock: stocks) {
             if ((stock.ticker().equals(ticker))) {
                 particularStock = stock;
@@ -56,6 +56,6 @@ public class StockResource {
             }
         }
 
-        return stocksInRange;
+        return pricesInRange;
         
     }
