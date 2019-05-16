@@ -33,15 +33,15 @@ public class CompanyResource {
 
     // TODO - Add a @GET resource to get company data
     @GET
-    @Path("company/{ticker}")
+    @Path("company/{particularName}")
     @Producess(MediaType.APPLICARION_JSON)
-    public Response getCompanyInfo(@PathParam("ticker") Ticker ticker) throws IOException {
+    public Response getCompanyInfo(@PathParam("particularName") String particularName) throws IOException {
         
         List<Company> allCompany = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
         Company particularCompany = new Company;
 
         for (Company company: allCompany) {
-            if ((company.getSymbol().equals(ticker))) {
+            if ((company.getSymbol().equals(particularName))) {
                 particularCompany = company;
             }
         }
