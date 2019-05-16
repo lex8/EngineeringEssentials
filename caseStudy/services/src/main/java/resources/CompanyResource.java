@@ -26,17 +26,18 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 // TODO - add your @Path here
 @Path("service")
 public class CompanyResource {
 
     // TODO - Add a @GET resource to get company data
     @GET
-    @Path("company")
+    @Path("company/{ticker}")
     @Producess(MediaType.APPLICARION_JSON)
-    public Response getCompanyInfo() throws IOException {
+    public Response getCompanyInfo(@PathParam("ticker") Ticker ticker) throws IOException {
         
-        Company ticker = null;
+        Company company = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
         return Response.ok().entity(ticker).build();
     }
 

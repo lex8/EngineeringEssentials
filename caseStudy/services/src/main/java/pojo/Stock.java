@@ -36,25 +36,41 @@ public class Stock {
     @JsonProperty
     private Ticker ticker;
     @JsonProperty
-    private DailyClosePrice[] dailyClosePrice;
+    private TreeMap<Date, Double> dailyClosePrice;
+    
+    // public TreeMap<Date, Double> getDailyClosePrice() {
+    //     return dailyClosePrice;
+    // }
+    public Ticker getTicker() {
+        return ticker;
+    }
 
-}
-private class DailyClosePrice {
+    public Map<Date, Double> getDailyClosePrice(){
+        return dailyClosePrice;
+    }
 
-    @DJsonFormat(shape = JsonFormat.Shape.STRING, pattern="mm/dd/yyy")
-    public Date date;
-    @JsonProperty
-    public double price;
-}
-public DailyClosePrice[] getDailyClosePrice() {
-    return dailyClosePrice[];
-}
-public Ticker getTicker() {
-    return ticker;
-}
-public void setTicker(Ticker ticker) {
-    this.ticker = ticker;
-}
-public void setDailyClosePrice(DailyClosePrice[] dailyClosePrice) {
-    this.dailyClosePrice = dailyClosePrice;
+    public Set<Date> getDate(){
+        HashSet<Date> dates=dailyClosePrice.keySet();
+        return dates;
+    }
+
+    public List<Double> getPrice(){
+        ArrayList<Double> prices=dailyClosePrice.values();
+        return prices;
+    }
+
+    //return dates and associated prices
+    // public TreeSet<Date> getDate(){
+    //     Set<Date> dates=dailyClosePrice.keySet();
+    //     return dates;
+    // }
+
+    //public 
+
+    // public void setTicker(Ticker ticker) {
+    //      this.ticker = ticker;
+    // }
+    // public void setDailyClosePrice(DailyClosePrice[] dailyClosePrice) {
+    //     this.dailyClosePrice = dailyClosePrice;
+    // }
 }
