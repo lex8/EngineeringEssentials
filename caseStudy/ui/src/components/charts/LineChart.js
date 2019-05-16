@@ -29,7 +29,7 @@ class LineChart extends React.Component {
     }
 
     componentDidMount() {
-        Highcharts.chart('chart', {
+      this.highchartsOptions = {
 
                chart: {
                           zoomType: 'x'
@@ -286,6 +286,7 @@ class LineChart extends React.Component {
 
         // Apply the theme
         Highcharts.setOptions(Highcharts.theme);
+        Highcharts.chart('chart', this.highchartsOptions);
 
     }
 
@@ -301,12 +302,18 @@ class LineChart extends React.Component {
 
          //research highchart
          //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
-
-
-
-        
-
-         this.chart.series[0].setData(data);
+        var xAxisArray = [];
+        var currentDate = xAxisArray[-1];
+        xAxisArray += [props.start_date];
+        for (int i = 0; i < props.end_date - props.start_date + 1; i++)
+        {
+              xAxisArray += [currentDate + 1];
+              i++;
+              currentDate = xAxisArray[-1];
+        }
+        this.highchartsOptions.xAxis.categories = xAxisArray;
+        var data = this.props.data;
+        this.chart.series[0].setData(data);
     }
 
     componentWillUnmount() {

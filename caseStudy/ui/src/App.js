@@ -26,12 +26,9 @@ class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            userInputs:
-
-            /**
-             * TODO
-             * Add state objects for the user inputs and anything else you may need to render the highchart.
-             */
+            name:' ',
+            startDate: ' ',
+            endDate: ' '
         };
 
     }
