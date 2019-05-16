@@ -16,6 +16,12 @@
 
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Date;
+
+
 /**
  * This class will define a company's end-of-day stock price
  * Look at resources/data/historicalStockData.json
@@ -27,4 +33,44 @@ public class Stock {
     // provided data in resources/data
 
     // TODO - add getter and setter methods for your attributes
+    @JsonProperty
+    private Ticker ticker;
+    @JsonProperty
+    private TreeMap<Date, Double> dailyClosePrice;
+
+    // public TreeMap<Date, Double> getDailyClosePrice() {
+    //     return dailyClosePrice;
+    // }
+    public Ticker getTicker() {
+        return ticker;
+    }
+
+    public TreeMap<Date, Double> getDailyClosePrice(){
+        return dailyClosePrice;
+    }
+
+    public Set<Date> getDate(){
+        HashSet<Date> dates=dailyClosePrice.keySet();
+        return dates;
+    }
+
+    public List<Double> getPrice(){
+        ArrayList<Double> prices=dailyClosePrice.values();
+        return prices;
+    }
+
+    //return dates and associated prices
+    // public TreeSet<Date> getDate(){
+    //     Set<Date> dates=dailyClosePrice.keySet();
+    //     return dates;
+    // }
+
+    //public
+
+    // public void setTicker(Ticker ticker) {
+    //      this.ticker = ticker;
+    // }
+    // public void setDailyClosePrice(DailyClosePrice[] dailyClosePrice) {
+    //     this.dailyClosePrice = dailyClosePrice;
+    // }
 }

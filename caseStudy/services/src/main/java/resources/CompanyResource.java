@@ -15,11 +15,32 @@
  */
 
 package resources;
+import data.companyinfo;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 // TODO - add your @Path here
+@Path("service")
 public class CompanyResource {
 
     // TODO - Add a @GET resource to get company data
+    @GET
+    @Path("company/{ticker}")
+    @Producess(MediaType.APPLICARION_JSON)
+    public Response getCompanyInfo(@PathParam("ticker") Ticker ticker) throws IOException {
+
+        Company company = InputValidator.readAllCompany("caseStudy/services/src/main/resources/data/companyInfo.json");
+        return response.ok().entity(ticker).build();
+    }
+
     // Your service should return data for a given stock ticker
 
 }

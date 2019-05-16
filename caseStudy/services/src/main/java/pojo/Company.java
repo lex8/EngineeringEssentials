@@ -1,3 +1,4 @@
+
 /**
  * Copyright 2019 Goldman Sachs.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,15 +17,83 @@
 
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * This class will define a company and its attributes
  * Look at resources/data/companyInfo.json
  */
 public class Company {
 
-    // TODO - Think back to your modelling session
-    // Define the attributes of a Company based on the
-    // provided data in resources/data
+    @JsonProperty
+    private Ticker symbol;
+    @JsonProperty
+    private String name;
+    @JsonProperty
+    private String headquartersCity;
+    @JsonProperty
+    private String headquartersStateorCountry;
+    @JsonProperty
+    private int numberOfEmployees;
+    @JsonProperty
+    private String sector;
+    @JsonProperty
+    private String industry;
 
-    // TODO - add getter and setter methods for your attributes
+    public Ticker getSymbol(){
+        return symbol;
+    }
+
+    private void setSymbol(Ticker symbol){
+        this.symbol=symbol;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    private void setName(String name){
+        this.name=name;
+    }
+
+    public String getHeadquartersCity(){
+        return headquartersCity;
+    }
+
+    private void setHeadquartersCity(String headquartersCity){
+        this.headquartersCity=headquartersCity;
+    }
+
+    public String getHeadquartersStateorCountry(){
+        return headquartersStateorCountry;
+    }
+
+    private void setHeadquartersStateorCountry(String headquartersStateorCountry){
+        this.headquartersStateorCountry=headquartersStateorCountry;
+    }
+
+    public int getNumberOfEmployees(){
+        return numberOfEmployees;
+    }
+
+    private void setNumberOfEmployees(int numberOfEmployees){
+        this.numberOfEmployees=numberOfEmployees;
+    }
+
+    public String getSector(){
+        return sector;
+    }
+
+    private void setSector(String sector){
+        this.sector=sector;
+    }
+
+    public String getIndustry(){
+        return industry;
+    }
+
+    private void setIndustry(String industry){
+        this.industry=industry;
+    }
+
 }
