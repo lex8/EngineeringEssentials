@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd422090-b5f7-4ea0-9f60-db10751300d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/caseStudy/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/ui/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Date.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="-18">
               <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="78" column="108" selection-start-line="78" selection-start-column="108" selection-end-line="78" selection-end-column="108" />
+            <state relative-caret-position="-183">
+              <caret line="39" column="49" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+            <state relative-caret-position="537">
+              <caret line="182" column="29" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="182" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -58,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            <state relative-caret-position="610">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="318" column="14" lean-forward="true" selection-start-line="318" selection-start-column="14" selection-end-line="318" selection-end-column="14" />
+            <state relative-caret-position="-1280">
+              <caret line="192" column="24" lean-forward="true" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -90,6 +90,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>min</find>
+      <find>props</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,9 +101,9 @@
       <list>
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js" />
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Date.js" />
-        <option value="$PROJECT_DIR$/caseStudy/ui/src/App.js" />
-        <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" />
         <option value="$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js" />
+        <option value="$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js" />
+        <option value="$PROJECT_DIR$/caseStudy/ui/src/App.js" />
       </list>
     </option>
   </component>
@@ -516,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Date.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/techCurriculum/ui/solutions/7.1/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -530,31 +524,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/App.js">
+    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Date.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="78" column="108" selection-start-line="78" selection-start-column="108" selection-end-line="78" selection-end-column="108" />
+        <state relative-caret-position="-18">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/charts/LineChart.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1280">
+          <caret line="192" column="24" lean-forward="true" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/StockTicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="182" column="29" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="182" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/components/Charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caseStudy/ui/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
-          <caret line="318" column="14" lean-forward="true" selection-start-line="318" selection-start-column="14" selection-end-line="318" selection-end-column="14" />
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>

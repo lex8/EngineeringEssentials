@@ -41,7 +41,8 @@ class App extends React.Component{
       return (
           <div className="page-display">
               <div className="input">
-              {/**
+              {
+              /**
                * TODO
                * Render the StockTicker and Date components. You can use the date component twice
                * for both the start and end dates.
@@ -49,7 +50,13 @@ class App extends React.Component{
                * These props methods should set state and help determine if the
                * highchart should be displayed by changing the state of that boolean.
                * Don't forget to bind these methods!
-               */}
+               */
+
+                <Date: date = props.startDate/>
+                <Date: date= props.endDate/>
+                <StockTicker: company = props.name/>
+
+               }
 
                 <div className="date-range">
 
@@ -65,6 +72,13 @@ class App extends React.Component{
                    *  be maintained as a state object.
                    *  http://reactpatterns.com/#conditional-rendering
                    */
+                   this.name != NULL && this.startDate != NULL && this.endDate != NULL ? (
+                                              <div>
+                                                <Chart: name = props.name/>
+                                               </div>
+                                               ) : (
+                                                   //do nothing
+                                               )
 
                    }
 
